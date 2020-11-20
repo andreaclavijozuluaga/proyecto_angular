@@ -1,0 +1,17 @@
+<table>
+  <thead>
+    <td>identificación</td>
+    <td>Nombre</td>
+    <td>Salario</td>
+    <td>Fecha nacimiento</td>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of list">
+      <td>{{ item.id }}</td>
+      <td>{{ item.nom }}</td>
+      <td>{{ item.sal | currency }}</td>
+      <td>{{ item.fe_nac | date: "yyyy/mm/dd "}}</td>
+    </tr>
+  </tbody>
+</table>
+
